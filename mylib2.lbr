@@ -600,6 +600,31 @@
 <wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
 </package>
+<package name="ATD_RCA_JACK_DIP">
+<text x="9.271" y="-8.001" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="-6.731" y="2.413" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<wire x1="-6.35" y1="-7.62" x2="7.62" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
+<wire x1="7.62" y1="7.62" x2="-6.35" y2="7.62" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="7.62" x2="-6.35" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="3.81" x2="-3.81" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="2.54" x2="-3.81" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-3.81" x2="3.81" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-3.81" x2="3.81" y2="3.81" width="0.127" layer="21"/>
+<wire x1="3.81" y1="3.81" x2="-3.81" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="2.54" x2="-8.89" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="2.54" x2="-8.89" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="-2.54" x2="-3.81" y2="-2.54" width="0.127" layer="21"/>
+<pad name="P$1" x="2.54" y="6.35" drill="0.8"/>
+<pad name="P$2" x="0" y="6.35" drill="0.8"/>
+<pad name="P$3" x="2.54" y="-6.35" drill="0.8"/>
+<pad name="P$4" x="0" y="-6.35" drill="0.8"/>
+<pad name="P$5" x="-2.54" y="6.35" drill="0.8"/>
+<pad name="P$6" x="-5.08" y="6.35" drill="0.8"/>
+<pad name="P$7" x="-2.54" y="-6.35" drill="0.8"/>
+<pad name="P$8" x="-5.08" y="-6.35" drill="0.8"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TS2">
@@ -1504,6 +1529,22 @@ DIL 14PIN 600mil</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATD_RCA_JACK-DIP">
+<gates>
+<gate name="G$1" symbol="RCA_JACK_DIP" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="ATD_RCA_JACK_DIP">
+<connects>
+<connect gate="G$1" pin="S" pad="P$5 P$6 P$7 P$8"/>
+<connect gate="G$1" pin="T" pad="P$1 P$2 P$3 P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
