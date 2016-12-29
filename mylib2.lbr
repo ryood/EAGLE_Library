@@ -858,9 +858,9 @@
 <wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.2032" layer="51" curve="-180"/>
 <wire x1="-1.375" y1="1.275" x2="-1.35" y2="-1.3" width="0.2032" layer="51" curve="-273.242292"/>
 <circle x="-3.175" y="0" radius="1.27" width="0.2032" layer="51"/>
-<pad name="1" x="-2.54" y="2.54" drill="1.1" diameter="1.6764" rot="R90"/>
+<pad name="3" x="-2.54" y="2.54" drill="1.1" diameter="1.6764" rot="R90"/>
 <pad name="2" x="0" y="2.54" drill="1.1" diameter="1.6764" rot="R90"/>
-<pad name="3" x="2.54" y="2.54" drill="1.1" diameter="1.6764" rot="R90"/>
+<pad name="1" x="2.54" y="2.54" drill="1.1" diameter="1.6764" rot="R90"/>
 <pad name="4" x="-2.54" y="-2.54" drill="1.1" diameter="1.6764" rot="R90"/>
 <pad name="5" x="0" y="-2.54" drill="1.1" diameter="1.6764" rot="R90"/>
 <pad name="6" x="2.54" y="-2.54" drill="1.1" diameter="1.6764" rot="R90"/>
@@ -932,14 +932,14 @@
 <wire x1="-11.43" y1="-11.684" x2="-11.43" y2="-5.08" width="0.1524" layer="21"/>
 <wire x1="-11.43" y1="-5.08" x2="-11.43" y2="-1.143" width="0.1524" layer="21"/>
 <wire x1="-11.43" y1="0.889" x2="-11.43" y2="-1.143" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-21.59" y="-3.81" drill="0.8128" shape="long" rot="R180"/>
-<pad name="2" x="-21.59" y="-1.27" drill="0.8128" shape="long" rot="R180"/>
-<pad name="3" x="-21.59" y="1.27" drill="0.8128" shape="long" rot="R180"/>
-<pad name="4" x="-21.59" y="3.81" drill="0.8128" shape="long" rot="R180"/>
-<pad name="5" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R180"/>
-<pad name="6" x="7.62" y="-1.27" drill="0.8128" shape="long" rot="R180"/>
-<pad name="7" x="7.62" y="1.27" drill="0.8128" shape="long" rot="R180"/>
-<pad name="8" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R180"/>
+<pad name="VBUS" x="-21.59" y="-3.81" drill="0.8128" shape="long" rot="R180"/>
+<pad name="DM" x="-21.59" y="-1.27" drill="0.8128" shape="long" rot="R180"/>
+<pad name="DP" x="-21.59" y="1.27" drill="0.8128" shape="long" rot="R180"/>
+<pad name="GND" x="-21.59" y="3.81" drill="0.8128" shape="long" rot="R180"/>
+<pad name="VDD" x="7.62" y="-3.81" drill="0.8128" shape="long" rot="R180"/>
+<pad name="GND2" x="7.62" y="-1.27" drill="0.8128" shape="long" rot="R180"/>
+<pad name="TX" x="7.62" y="1.27" drill="0.8128" shape="long" rot="R180"/>
+<pad name="RX" x="7.62" y="3.81" drill="0.8128" shape="long" rot="R180"/>
 <text x="11.684" y="-8.89" size="1.778" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-5.207" y="-6.096" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
 <wire x1="-11.43" y1="5.08" x2="-22.86" y2="5.08" width="0.127" layer="21"/>
@@ -969,6 +969,30 @@
 <rectangle x1="3.429" y1="1.27" x2="5.334" y2="1.778" layer="21"/>
 <rectangle x1="-0.889" y1="1.27" x2="0.889" y2="1.778" layer="51"/>
 <rectangle x1="1.651" y1="1.27" x2="3.429" y2="1.778" layer="51"/>
+</package>
+<package name="POLYSWITCH-5,0">
+<wire x1="2.5246" y1="-0.7745" x2="2.54" y2="0.762" width="0.1524" layer="51" curve="101.534587"/>
+<wire x1="-2.54" y1="-0.762" x2="-2.5246" y2="0.7745" width="0.1524" layer="51" curve="-101.534587"/>
+<wire x1="2.667" y1="0" x2="2.794" y2="0" width="0.6096" layer="51"/>
+<wire x1="-2.667" y1="0" x2="-2.794" y2="0" width="0.6096" layer="51"/>
+<wire x1="2.667" y1="-0.508" x2="2.667" y2="0" width="0.254" layer="51"/>
+<wire x1="-2.667" y1="0.508" x2="-2.667" y2="0" width="0.254" layer="51"/>
+<wire x1="-2.667" y1="0" x2="-2.667" y2="-0.508" width="0.254" layer="51"/>
+<wire x1="2.667" y1="0" x2="2.667" y2="0.508" width="0.254" layer="51"/>
+<wire x1="2.413" y1="0.762" x2="2.413" y2="-0.762" width="0.254" layer="51"/>
+<wire x1="-2.413" y1="0.762" x2="-2.413" y2="-0.762" width="0.254" layer="51"/>
+<wire x1="2.413" y1="0.762" x2="2.54" y2="0.635" width="0.254" layer="51"/>
+<wire x1="2.413" y1="-0.762" x2="2.54" y2="-0.635" width="0.254" layer="51"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.54" y2="-0.635" width="0.254" layer="51"/>
+<wire x1="-2.413" y1="0.762" x2="-2.54" y2="0.635" width="0.254" layer="51"/>
+<pad name="1" x="-2.667" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="2.667" y="0" drill="0.8128" shape="long" rot="R90"/>
+<text x="-2.032" y="3.683" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.032" y="-5.08" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.127" layer="22" curve="180"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="1.27" width="0.127" layer="22" curve="180"/>
+<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -2346,10 +2370,10 @@ DIL 14PIN 600mil</description>
 <devices>
 <device name="" package="PUSH_SW_ALT">
 <connects>
-<connect gate="G$1" pin="O" pad="3"/>
-<connect gate="G$1" pin="O1" pad="6"/>
-<connect gate="G$1" pin="P" pad="1"/>
-<connect gate="G$1" pin="P1" pad="4"/>
+<connect gate="G$1" pin="O" pad="1"/>
+<connect gate="G$1" pin="O1" pad="4"/>
+<connect gate="G$1" pin="P" pad="3"/>
+<connect gate="G$1" pin="P1" pad="6"/>
 <connect gate="G$1" pin="S" pad="2"/>
 <connect gate="G$1" pin="S1" pad="5"/>
 </connects>
@@ -2385,14 +2409,14 @@ DIL 14PIN 600mil</description>
 <devices>
 <device name="" package="PSOC4-PROTO_USB-SERIAL_BRIDGE">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="1" pad="GND"/>
+<connect gate="G$1" pin="2" pad="DP"/>
+<connect gate="G$1" pin="3" pad="DM"/>
+<connect gate="G$1" pin="4" pad="VBUS"/>
+<connect gate="G$1" pin="5" pad="RX"/>
+<connect gate="G$1" pin="6" pad="TX"/>
+<connect gate="G$1" pin="7" pad="GND2"/>
+<connect gate="G$1" pin="8" pad="VDD"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2410,6 +2434,22 @@ DIL 14PIN 600mil</description>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="VI" pad="2"/>
 <connect gate="G$1" pin="VO" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POLYSWITCH-5,0">
+<gates>
+<gate name="G$1" symbol="PTC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POLYSWITCH-5,0">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
