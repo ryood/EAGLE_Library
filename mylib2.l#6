@@ -3400,7 +3400,8 @@ Dual Output DC/DC Converter</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="EV20">
+<deviceset name="EV20" prefix="L" uservalue="yes">
+<description>&lt;b&gt;EV20&lt;/b&gt; Schaffner Common-mode Choke</description>
 <gates>
 <gate name="G$1" symbol="EV20" x="0" y="0"/>
 </gates>
